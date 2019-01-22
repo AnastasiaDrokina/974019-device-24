@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анастасия Дрокина](https://up.htmlacademy.ru/htmlcss/24/user/974019).
-* Наставник: `Влад Кривокора`.
+* Наставник: [Влад Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
