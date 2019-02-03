@@ -2,25 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>DEVICE</title>
+    <title>Device</title>
   </head>
   <body>
     <header class="page-header">
       <a class="page-header-logo-device">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
       </a>
-        <ul>
-          <!--Здесь будет поиск по сайту-->
-          <li>
-            <a href="enter.html">Вход</a>
-          </li>
-          <li>
-            <a href="compare.html">Сравнить</a>
-          </li>
-          <li>
-            <a href="cart.html">Корзина</a>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <form action="/search.html" method="post">
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" id="search" name="name-search" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+          </form>
+        </li>
+        <li>
+          <a href="enter.html">Вход</a>
+        </li>
+        <li>
+          <a href="compare.html">Сравнить</a>
+        </li>
+        <li>
+          <a href="cart.html">Корзина</a>
+        </li>
+      </ul>
       <nav class="site-nav">
         <ul>
           <li><a href="catalog.html">Каталог товаров</a></li>
@@ -31,6 +37,59 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Вы на странице Device</h1>
+      <!--Здесь будет слайдер-->
+      <ul>
+        <li>
+          <a href="virtual-reality.html">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="monopods-for-selfie.html">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="action-camera.html">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="fitness-bracelets.html">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="smart-watch.html">Умные часы</a>
+        </li>
+        <li>
+          <a href="quadcopters.html">Квадрокоптеры</a>
+        </li>
+      </ul>
+      <div>
+        <button>Доставка</button>
+        <button>Гарантия</button>
+        <button>Кредит</button>
+      </div>
+      <div>
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </div>
+      <div>
+        <h2>Гарантия</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est itaque natus? Exercitationem, deleniti dolores? Consequuntur fugiat nam impedit temporibus, qui adipisci aspernatur, quos porro labore incidunt fugit recusandae neque?</p>
+      </div>
+      <div>
+        <h2>Кредит</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, temporibus accusamus quos rem, consectetur sit voluptate culpa nulla deserunt aliquam ab earum quaerat labore nobis ut possimus, minima enim quisquam.</p>
+      </div>
+      <ul>
+        <li>
+          <img src="img/logo-dji.png" width="260" height="100" alt="Логотип dji">
+        </li>
+        <li>
+          <img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип spgadgets">
+        </li>
+        <li>
+          <img src="img/logo-gopro.png" width="260" height="100" alt="Логотип gopro">
+        </li>
+        <li>
+          <img src="img/logo-vive.png" width="260" height="100" alt="Логотип vive">
+        </li>
+      </ul>
       <div class="about-contacts">
         <section class="about-us">
           <h2>О нас</h2>
@@ -70,23 +129,52 @@
       <a href= "tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
       <nav class="footer-site-nav">
         <ul>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li>
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
       </nav>
       <ul class="social-network">
         <li>
-          <a class="social-button" href="#">Faceboook</a>
+          <a class="social-button" href="#" aria-label="Faceboook"></a>
         </li>
         <li>
-          <a class="social-button" href="#"> Instagram</a>
+          <a class="social-button" href="#" aria-label="Instagram"></a>
         </li>
         <li>
-          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button" href="#" aria-label="Twitter"></a>
         </li>
       </ul>
-      <a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+      <a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a>
     </footer>
+    <!--popin-->
+    <div class="popin-contact">
+      <button aria-label="Закрыть"></button>
+      <form action="/" method="post">
+        <div>
+          <label for="fullname">Ваше имя</label>
+          <input type="text" id="fullname" name="fullname-field" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="email">Ваш e-mail</label>
+          <input type="email" id="email" name="email-field" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="message-field" placeholder="В свободной форме"></textarea>
+        </div>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+    <div class="popin-map">
+      <button aria-label="Закрыть"></button>
+      <!--Не знаю что тут делать-->
+    </div>
   </body>
 </html>
