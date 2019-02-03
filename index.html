@@ -11,7 +11,7 @@
       </a>
       <ul>
         <li>
-          <form action="/search.html" method="post">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input type="search" id="search" name="name-search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
@@ -29,10 +29,18 @@
       </ul>
       <nav class="site-nav">
         <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -76,20 +84,31 @@
         <h2>Кредит</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, temporibus accusamus quos rem, consectetur sit voluptate culpa nulla deserunt aliquam ab earum quaerat labore nobis ut possimus, minima enim quisquam.</p>
       </div>
-      <ul>
-        <li>
-          <img src="img/logo-dji.png" width="260" height="100" alt="Логотип dji">
-        </li>
-        <li>
-          <img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип spgadgets">
-        </li>
-        <li>
-          <img src="img/logo-gopro.png" width="260" height="100" alt="Логотип gopro">
-        </li>
-        <li>
-          <img src="img/logo-vive.png" width="260" height="100" alt="Логотип vive">
-        </li>
-      </ul>
+      <section class="partners">
+        <h2 class="visually-hidden">Парнёры</h2>
+        <ul>
+          <li>
+            <a href="#" aria-label="Переход на страницу партнера dji">
+              <img src="img/logo-dji.png" width="260" height="100" alt="Логотип dji">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Переход на страницу партнера spgargets">
+              <img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип spgadgets">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Переход на страницу партнера gopro">
+              <img src="img/logo-gopro.png" width="260" height="100" alt="Логотип gopro">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Переход на страницу партнера vive"></a>
+              <img src="img/logo-vive.png" width="260" height="100" alt="Логотип vive">
+            </a>
+          </li>
+        </ul>
+      </section>
       <div class="about-contacts">
         <section class="about-us">
           <h2>О нас</h2>
@@ -126,7 +145,7 @@
           </li>
         </ul>
       <address>г.Москва, ул.Строителей,15</address>
-      <a href= "tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
       <nav class="footer-site-nav">
         <ul>
           <li>
@@ -156,7 +175,7 @@
     <!--popin-->
     <div class="popin-contact">
       <button aria-label="Закрыть"></button>
-      <form action="/" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <div>
           <label for="fullname">Ваше имя</label>
           <input type="text" id="fullname" name="fullname-field" placeholder="Имя Фамилия">
@@ -169,7 +188,7 @@
           <label for="message">Текст письма:</label>
           <textarea id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
-        <input type="submit" value="Отправить">
+        <button type="submit">Отправить</button>
       </form>
     </div>
     <div class="popin-map">
