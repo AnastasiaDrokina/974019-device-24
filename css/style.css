@@ -1,0 +1,96 @@
+/*Для Gilroy 800 для Open sans 300*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1.15px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.link-opacity:hover {
+  opacity:  0.6;
+}
+.link-opacity:active {
+  opacity: 0.3;
+}
+
+.page-header {
+  background: #f0c52e;
+}
+.user {
+  font-size: 15px;
+  line-height: 30px;
+}
+.site-nav-link {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+}
+}
+.page-main-link {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.18px;
+}
+
+.page-main-button {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+h2 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.about-us-item {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+}
+.more{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.footer-nav-link {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.page-footer {
+  background: #464646;
+  color: #ffffff;
+}
+.page-footer a {
+  color: #ffffff;
+}
