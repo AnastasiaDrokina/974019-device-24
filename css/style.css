@@ -1,7 +1,23 @@
 /*Для Gilroy 800 для Open sans 300*/
 
+
+
+
+
+
+
+
+
+
+
 /********/
 /* base */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   font-family: "Open Sans","Arial", sans-serif;
@@ -13,12 +29,10 @@ a {
   text-decoration: none;
   color: #000000;
 }
-.visually-hidden {
-  position: absolute;
-  height: 1px; width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 h1 {
   font-family: "Gilroy","Arial", sans-serif;
@@ -28,27 +42,54 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.47px;
 }
+.visually-hidden {
+  position: absolute;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
 /**********/
 /* header */
 .page-header {
   background: #f0c52e;
+  height: 299px;
+  width: 1160px;
+  margin: 40px auto 0;
+  padding: 0 60px;
 }
-.user {
+.page-header-logo-device {
+  display: block;
+  width: 163px;
+  height: 16px;
+}
+.header-user-container {
+  display: flex;
+  margin-top: 35px;
+}
+.header-user-column {
+  width: 50%;
+}
+.header-user-list {
+  display: flex;
   font-size: 15px;
   line-height: 30px;
 }
-.user-link:hover,
-.page-main-link:hover,
-.button-color:hover {
-  opacity: 0.6;
+.header-nav-container {
+  display: flex;
+  margin-top: 50px;
 }
-.user-link:active,
-.page-main-link:active,
-.button-color:active {
-  opacity: 0.3;
+.header-nav-column{
+  width: 50%;
 }
-.nav-link {
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item {
+  margin-right: 38px;
+}
+.header-nav-link {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -56,19 +97,18 @@ h1 {
   line-height: 24px;
   letter-spacing: 3.6px;
 }
-.nav-link:hover {
+
+.header-user-link:hover,
+.header-nav-link:hover {
   opacity: 0.6;
 }
-.nav-link:active {
+.header-user-link:active,
+.header-nav-link:active {
   opacity: 0.3;
 }
 
 /****************/
 /* main general */
-.breadcrumbs {
-  line-height: 24px;
-  opacity:  0.6;
-}
 .button-color {
 font-family: "Gilroy","Arial", sans-serif;
 font-size: 18px;
@@ -80,6 +120,10 @@ letter-spacing: 3.6px;
 
 /*****************/
 /* main homepage */
+.page-main {
+  width: 1160px;
+  margin: 0 auto;
+}
 .homepage h2 {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 47px;
@@ -87,19 +131,62 @@ letter-spacing: 3.6px;
   font-weight: 800;
   letter-spacing: 3.6px;
 }
-.page-main-link {
+.breadcrumbs {
+  line-height: 24px;
+  opacity:  0.6;
+}
+.slider {
+  height: 372px;
+}
+.categories {
+  display: flex;
+  margin: 106px 0 0 0;
+  justify-content: space-between;
+}
+.categories-item {
+  width: 160px;
+}
+.categories-link {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
 }
-.page-main-button {
+.services {
+  display: flex;
+  margin-top: 84px;
+}
+.services-list {
+  width: 277px;
+}
+.services-button {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+}
+.services-description {
+  width: 883px;
+}
+.partners {
+  margin: 94px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.partners-item {
+  width: 260px;
+}
+.about-contacts {
+  margin-top: 93px;
+  display: flex;
+}
+.about-us {
+  width: 740px;
+}
+.contacts {
+  width: 700px;
 }
 .about-us-item {
   font-family: "Gilroy","Arial", sans-serif;
@@ -117,11 +204,25 @@ letter-spacing: 3.6px;
 
 /****************/
 /* main catalog */
+.catalog .page-header {
+  height: 186px;
+}
+
 .catalog h2 {
   font-size: 16px;
   font-family: "Gilroy","Arial", sans-serif;
   line-height: 24px;
   letter-spacing: 3.2px;
+}
+.catalog-container{
+  display: flex;
+}
+.filters {
+  width: 330px;
+  padding: 0 70px;
+}
+.catalog-products {
+  width: 830px;
 }
 .filters p {
   font-family: "Gilroy","Arial", sans-serif;
@@ -136,7 +237,7 @@ letter-spacing: 3.6px;
   font-weight: 300;
   color: black;
 }
-.product-item {
+.product-link {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -156,13 +257,49 @@ letter-spacing: 3.6px;
 .page-footer {
   background: #464646;
   color: #ffffff;
+  margin-top: 98px;
 }
 .page-footer a {
   color: #ffffff;
 }
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 65px 0;
+  display: flex;
+}
+.footer-column-1{
+  width: 202px;
+}
+.footer-column-2{
+  width: 435px;
+  margin-left: 160px;
+}
+.footer-column-3{
+  width: 325px;
+  margin-left: 38px;
+}
+
+.footer-nav-link {
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+}
+.footer-user-link:hover,
+.footer-nav-link:hover {
+  opacity: 0.6;
+}
+.footer-user-link:active,
+.footer-nav-link:active {
+  opacity: 0.3;
+}
 
 /*********/
 /* modal */
-.popin-contact {
+.popin-contact,
+.popin-map {
   display: none;
 }

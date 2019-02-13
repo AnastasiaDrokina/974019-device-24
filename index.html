@@ -13,107 +13,114 @@
       <a class="page-header-logo-device">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
       </a>
-      <ul class="user">
-        <li class="user-item">
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <label for="search" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" id="search" name="name-search" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="user-item">
-          <a href="enter.html" class="user-link">Войти</a>
-        </li>
-        <li class="user-item">
-          <a href="compare.html" class="user-link">Сравнить</a>
-        </li>
-        <li class="user-item">
-          <a href="cart.html" class="user-link">Корзина</a>
-        </li>
-      </ul>
-      <nav class="site-nav">
-        <ul class="site-nav-list">
-          <li clas="site-nav-item">
-            <a href="catalog.html" class="nav-link ">Каталог товаров</a>
-          </li>
-          <li clas="site-nav-item">
-            <a href="delivery.html" class="nav-link">Доставка</a>
-          </li>
-          <li clas="site-nav-item">
-            <a href="warranty.html" class="nav-link">Гарантия</a>
-          </li>
-          <li clas="site-nav-item">
-            <a href="contacts.html" class="nav-link">Контакты</a>
-          </li>
-        </ul>
+      <div class="header-user-container">
+        <form class="header-user-column">
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" id="search" name="name-search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>
+        </form>
+        <div class="header-user-column">
+          <ul class="header-user-list">
+            <li class="header-user-item">
+              <a href="enter.html" class="header-user-link">Войти</a>
+            </li>
+            <li class="header-user-item">
+              <a href="compare.html" class="header-user-link">Сравнить</a>
+            </li>
+            <li class="header-user-item">
+              <a href="cart.html" class="header-user-link">Корзина</a>
+            </li>
+          </ul>
+      </div>
+      </div>
+      <nav class="header-nav-container">
+        <div class="header-nav-column">
+          <a href="catalog.html" class="header-nav-link">Каталог товаров</a>
+        </div>
+        <div class="header-nav-column">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="delivery.html" class="header-nav-link">Доставка</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="warranty.html" class="header-nav-link">Гарантия</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="contacts.html" class="header-nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Вы на странице Device</h1>
-      <!--Здесь будет слайдер-->
-      <ul class="page-main-list">
-        <li class="page-main-item">
-          <a href="virtual-reality.html" class="page-main-link">Виртуальная реальность</a>
+      <div class="slider"><!--Здесь будет слайдер--></div>
+      <ul class="categories">
+        <li class="categories-item">
+          <a href="virtual-reality.html" class="categories-link">Виртуальная реальность</a>
         </li>
-        <li class="page-main-item">
-          <a href="monopods-for-selfie.html" class="page-main-link">Моноподы для селфи</a>
+        <li class="categories-item">
+          <a href="monopods-for-selfie.html" class="categories-link">Моноподы для селфи</a>
         </li>
-        <li class="page-main-item">
-          <a href="action-camera.html" class="page-main-link">Экшн-камеры</a>
+        <li class="categories-item">
+          <a href="action-camera.html" class="categories-link">Экшн-камеры</a>
         </li>
-        <li class="page-main-item">
-          <a href="fitness-bracelets.html" class="page-main-link">Фитнес-браслеты</a>
+        <li class="categories-item">
+          <a href="fitness-bracelets.html" class="categories-link">Фитнес-браслеты</a>
         </li>
-        <li class="page-main-item">
-          <a href="smart-watch.html" class="page-main-link">Умные часы</a>
+        <li class="categories-item">
+          <a href="smart-watch.html" class="categories-link">Умные часы</a>
         </li>
-        <li class="page-main-item">
-          <a href="quadcopters.html" class="page-main-link">Квадрокоптеры</a>
+        <li class="categories-item">
+          <a href="quadcopters.html" class="categories-link">Квадрокоптеры</a>
         </li>
       </ul>
-      <div>
-        <button class="page-main-button button-color">Доставка</button>
-        <button class="page-main-button button-color">Гарантия</button>
-        <button class="page-main-button button-color">Кредит</button>
+      <div class="services">
+        <div class="services-list">
+          <button class="services-button">Доставка</button>
+          <button class="services-button">Гарантия</button>
+          <button class="services-button">Кредит</button>
+        </div>
+        <div class="services-description">
+          <div>
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div>
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+          </div>
+          <div>
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div>
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же.</p>
-      </div>
-      <div>
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-          условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </div>
-      <section class="partners">
+      <ul class="partners">
         <h2 class="visually-hidden">Бренды</h2>
-        <ul>
-          <li>
-            <a href="#" aria-label="Переход на страницу бренда dji">
-              <img src="img/logo-dji.png" width="260" height="100" alt="Логотип dji">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Переход на страницу бренда spgargets">
-              <img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип spgadgets">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Переход на страницу бренда gopro">
-              <img src="img/logo-gopro.png" width="260" height="100" alt="Логотип gopro">
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Переход на страницу бренда vive"></a>
-              <img src="img/logo-vive.png" width="260" height="100" alt="Логотип vive">
-            </a>
-          </li>
-        </ul>
-      </section>
+        <li class="partners-item">
+          <a href="#" class="partners-link" aria-label="Переход на страницу бренда dji">
+            <img src="img/logo-dji.png" class="partners-image" width="260" height="100" alt="Логотип dji">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a href="#" class="partners-link" aria-label="Переход на страницу бренда spgargets">
+            <img src="img/logo-spgadgets.png" class="partners-image" width="260" height="100" alt="Логотип spgadgets">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a href="#" class="partners-link" aria-label="Переход на страницу бренда gopro">
+            <img src="img/logo-gopro.png" class="partners-image" width="260" height="100" alt="Логотип gopro">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a href="#" class="partners-link" aria-label="Переход на страницу бренда vive">
+            <img src="img/logo-vive.png" class="partners-image" width="260" height="100" alt="Логотип vive">
+          </a>
+        </li>
+      </ul>
       <div class="about-contacts">
         <section class="about-us">
           <h2>О нас</h2>
@@ -137,39 +144,47 @@
       </div>
     </main>
     <footer class="page-footer">
-      <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип Device">
-        <ul class="footer-user-list">
-          <li class="footer-user-item">
-            <a href="enter.html" class="user-link">Войти</a>
-          </li>
-          <li class="footer-user-item">
-            <a href="compare.html" class="user-link">Сравнить</a>
-          </li>
-          <li class="footer-user-item">
-            <a href="cart.html" class="user-link">Корзина</a>
-          </li>
-        </ul>
-      <address>г.Москва, ул.Строителей,15</address>
-      <a href="tel:+74954959595">Тел: +7(495)495-95-95</a>
-      <nav class="footer-nav">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-item">
-            <a href="delivery.html" class="nav-link">Доставка</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="warranty.html" class="nav-link">Гарантия</a>
-          </li>
-          <li class="footer-nav-item">
-            <a href="contacts.html" class="nav-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="social-network">
-        <li><a class="social-button" href="#" aria-label="Faceboook"></a></li>
-        <li><a class="social-button" href="#" aria-label="Instagram"></a></li>
-        <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
-      </ul>
-      <a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a>
+      <div class="footer-container">
+        <div class="footer-column footer-column-1">
+          <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип Device">
+          <address>г.Москва, ул.Строителей,15</address>
+        </div>
+        <div class="footer-column footer-column-2">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="delivery.html" class="footer-nav-link">Доставка</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="warranty.html" class="footer-nav-link">Гарантия</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="contacts.html" class="footer-nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social-network">
+            <li><a class="social-button" href="#" aria-label="Faceboook"></a></li>
+            <li><a class="social-button" href="#" aria-label="Instagram"></a></li>
+            <li><a class="social-button" href="#" aria-label="Twitter"></a></li>
+          </ul>
+        </div>
+        <div class="footer-column footer-column-3">
+          <ul class="footer-user-list">
+            <li class="footer-user-item">
+              <a href="enter.html" class="footer-user-link">Войти</a>
+            </li>
+            <li class="footer-user-item">
+              <a href="compare.html" class="footer-user-link">Сравнить</a>
+            </li>
+            <li class="footer-user-item">
+              <a href="cart.html" class="footer-user-link">Корзина</a>
+            </li>
+          </ul>
+          <a href="tel:+74954959595"></a>
+          <a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a>
+        </div>
+      </div>
     </footer>
     <!--popin-->
     <div class="popin-contact">
@@ -192,7 +207,6 @@
     </div>
     <div class="popin-map">
       <button aria-label="Закрыть"></button>
-      <!--Не знаю что тут делать-->
     </div>
   </body>
 </html>
