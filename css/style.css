@@ -257,6 +257,9 @@ h1 {
   width: 260px;
   margin-right: 40px;
 }
+.partners-link {
+  display: block;
+}
 .about-contacts {
   padding-bottom: 98px;
 }
@@ -350,7 +353,7 @@ h1 {
 }
 .filters {
   width: 330px;
-  padding: 0 70px;
+  padding: 0 60px;
 }
 .catalog-products {
   width: 830px;
@@ -529,6 +532,7 @@ address {
 .phone {
   margin-top: 52px;
   display: inline-block;
+
 }
 .page-footer-logo-html {
   width: 27px;
