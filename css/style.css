@@ -33,6 +33,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 h1 {
   font-family: "Gilroy","Arial", sans-serif;
@@ -248,10 +249,10 @@ h1 {
 #product-3:checked ~ .slide-3 {
   display: flex;
 }
-#product-1:checked ~ .slider-navigation label[for="product-1"],
-#product-2:checked ~ .slider-navigation label[for="product-2"],
-#product-3:checked ~ .slider-navigation label[for="product-3"] {
-  background: rgb(0, 0, 0);
+#product-1:checked ~ .slider-navigation .slider-controls[for="product-1"]::before,
+#product-2:checked ~ .slider-navigation .slider-controls[for="product-2"]::before,
+#product-3:checked ~ .slider-navigation .slider-controls[for="product-3"]::before {
+  display: block;
 }
 .slide-content {
   width: 500px;
@@ -269,7 +270,7 @@ h1 {
   line-height: 30px;
   margin-bottom: 63px;
 }
-.slide-button{
+.slide-button {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -299,8 +300,21 @@ h1 {
   margin-right: 21px;
   font-size: 0;
   border-radius: 50%;
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
+  position: relative;
+}
+.slider-controls::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: none;
 }
 .slide-stats {
   display: block;
@@ -350,40 +364,60 @@ h1 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
+  display: block;
 }
-.categories-link::before {
-  content: "";
+.categories-square {
   width: 160px;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
+  position: relative;
+}
+.categories-square::after {
+  content: "";
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 39px;
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
-.categories-link-1::before {
+.categories-link-1 .categories-square::after {
   background-image: url(../img/virtual-reality.svg);
+  width: 97px;
+  height: 55px;
 }
-.categories-link-2::before {
+.categories-link-2 .categories-square::after {
   background-image: url(../img/monopods-for-selfie.svg);
+  width: 86px;
+  height: 117px;
 }
-.categories-link-3::before {
+.categories-link-3 .categories-square::after {
   background-image: url(../img/action-camera.svg);
+  width: 71px;
+  height: 87px;
 }
-.categories-link-4::before {
+.categories-link-4 .categories-square::after {
   background-image: url(../img/fitness-bracelets.svg);
+  width: 107px;
+  height: 65px;
 }
-.categories-link-5::before {
+.categories-link-5 .categories-square::after {
   background-image: url(../img/smart-watch.svg);
+  width: 56px;
+  height: 98px;
 }
-.categories-link-6::before {
+.categories-link-6 .categories-square::after {
   background-image: url(../img/quadcopters.svg);
+  width: 139px;
+  height: 69px;
 }
-.categories-link:hover::before {
+.categories-link:hover .categories-square {
   background-color:  rgb(240, 197, 46);
 }
-.categories-link:active::before {
-  background-color:  rgb(240, 197, 46);
+.categories-link:active .categories-square::after {
+  opacity: 0.3;
 }
 
 /* section "services" */
@@ -425,8 +459,14 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   position: relative;
+  cursor: pointer;
 }
-.services-button-2, .services-button-3 {
+.services-button-2 {
+  margin-top: 40px;
+  padding-left: 27px;
+}
+.services-button-3 {
+  padding-left: 42px;
   margin-top: 40px;
 }
 .services-button::before {
@@ -436,12 +476,11 @@ h1 {
   position: absolute;
   width: 160px;
   top: 8px;
-  left: -20px;
+  left: 0;
   z-index: -1;
 }
 .services-button.active {
   background: rgb(0, 0, 0);
-  width: 278px;
   color: rgb(240, 197, 46);
   width: 277px;
   height: 40px;
@@ -511,6 +550,7 @@ h1 {
 }
 .about-contacts-columns h2 {
   margin: 0;
+  margin-bottom: 59px;
 }
 .about-us {
   width: 462px;
@@ -523,12 +563,16 @@ h1 {
   width: 560px;
   height: 222px;
   font-size: 0;
+  margin-top: 44px;
+}
+.about-us-list {
+  margin-top: 52px;
 }
 .about-us-item {
   font-family: "Gilroy","Arial", sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 .about-us p,
 .contacts p {
@@ -547,6 +591,7 @@ h1 {
   letter-spacing: 3.6px;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 .more::before {
   content: "";
@@ -559,11 +604,20 @@ h1 {
   z-index: -1;
 }
 .more-1 {
-  margin-top: 58px;
+  margin-top: 83px;
   margin-left: 20px;
 }
+.more-1::before {
+  top: 8px;
+  left: -26px;
+}
 .more-2 {
-  margin-top: 85px;
+  margin-top: 90px;
+  margin-left: 41px;
+}
+.more-2::before {
+  top: 8px;
+  left: -41px;
 }
 
 /****************/
@@ -806,15 +860,88 @@ address {
 }
 /*********/
 /* modal */
-.modal {
-  color:rgb(0, 0, 0);
-  width: 960px;
-  padding: 99px 100px;
-  position: fixed;
-}
-
 .modal-contact {
-
+  width: 960px;
+  height: 553px;
+  top: 120px;
+  left: 50%;
+  color:rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  padding: 99px 100px;
+  margin-left: -486px;
+  position: fixed;
+  z-index: 20;
+  display: none;
+}
+.modal-close {
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url(../img/modal-close.svg);
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.modal-field {
+  border: 0;
+}
+.modal-field-3 {
+  width: 100%;
+  margin-top: 29px;
+}
+.modal-titre {
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 13px;
+}
+.modal-input {
+  display: block;
+  background: #e5e5e5;
+  opacity: 0.5;
+  padding: 20px 20px;
+  border: 0;
+}
+.modal-name, .modal-email {
+  height: 50px;
+  width: 360px;
+}
+.modal-message {
+  width: 100%;
+  height: 157px;
+}
+.more-3 {
+  border: 0;
+  background: 0;
+  width: 200px;
+  margin-top: 55px;
+  margin-left: 27px;
+}
+.more-3::before {
+  top: 8px;
+  left: -26px;
 }
 .modal-map {
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 559px;
+  margin-top: -260px;
+  margin-left: -490px;
+  position: fixed;
+  z-index: 20;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  display: none;
+
 }

@@ -144,22 +144,34 @@
         <div class="container">
           <ul class="categories-list">
             <li class="categories-item">
-              <a href="virtual-reality.html" class="categories-link categories-link-1">Виртуальная реальность</a>
+              <a href="virtual-reality.html" class="categories-link categories-link-1">
+                <div class="categories-square"></div>
+                Виртуальная реальность</a>
             </li>
             <li class="categories-item">
-              <a href="monopods-for-selfie.html" class="categories-link categories-link-2">Моноподы для селфи</a>
+              <a href="monopods-for-selfie.html" class="categories-link categories-link-2">
+                <div class="categories-square"></div>
+                Моноподы для селфи</a>
             </li>
             <li class="categories-item">
-              <a href="action-camera.html" class="categories-link categories-link-3">Экшн-камеры</a>
+              <a href="action-camera.html" class="categories-link categories-link-3">
+                <div class="categories-square"></div>
+                Экшн-камеры</a>
             </li>
             <li class="categories-item">
-              <a href="fitness-bracelets.html" class="categories-link categories-link-4">Фитнес-браслеты</a>
+              <a href="fitness-bracelets.html" class="categories-link categories-link-4">
+                <div class="categories-square"></div>
+                Фитнес-браслеты</a>
             </li>
             <li class="categories-item">
-              <a href="smart-watch.html" class="categories-link categories-link-5">Умные часы</a>
+              <a href="smart-watch.html" class="categories-link categories-link-5">
+                <div class="categories-square"></div>
+                Умные часы</a>
             </li>
             <li class="categories-item">
-              <a href="quadcopters.html" class="categories-link categories-link-6">Квадрокоптеры</a>
+              <a href="quadcopters.html" class="categories-link categories-link-6">
+                <div class="categories-square"></div>
+                Квадрокоптеры</a>
             </li>
           </ul>
         </div>
@@ -296,25 +308,27 @@
       </div>
     </footer>
     <!--popin-->
-    <div class="modal modal-contact">
+    <div class="modal-contact">
       <button class="modal-close" type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="fullname">Ваше имя</label>
-          <input type="text" id="fullname" name="fullname-field" placeholder="Имя Фамилия">
+      <form class="modal-form"action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-field modal-field-1">
+          <label class="modal-titre" for="fullname">Ваше имя:</label>
+          <input class="modal-input modal-name" type="text" id="fullname" name="fullname-field" placeholder="Имя Фамилия">
         </div>
-        <div>
-          <label for="email">Ваш e-mail</label>
-          <input type="email" id="email" name="email-field" placeholder="email@example.com">
+        <div class="modal-field modal-field-2">
+          <label class="modal-titre" for="email">Ваш e-mail:</label>
+          <input class="modal-input modal-email" type="email" id="email" name="email-field" placeholder="email@example.com">
         </div>
-        <div>
-          <label for="message">Текст письма:</label>
-          <textarea id="message" name="message-field" placeholder="В свободной форме"></textarea>
+        <div class="modal-field modal-field-3">
+          <label class="modal-titre" for="message">Текст письма:</label>
+          <textarea class="modal-input modal-message" id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <button class="more more-3" type="submit">Отправить</button>
       </form>
     </div>
-    <div class="modal modal-map">
+    <div class="modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
       <button class="modal-close" type="button">Закрыть</button>
     </div>
   </body>
