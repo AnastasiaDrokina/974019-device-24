@@ -66,6 +66,7 @@
               <label for="product-3" class="slider-controls">Третий</label>
             </div>
             <div class="slide slide-1">
+              <div class="slider-indicator slider-indicator-1">01</div>
               <div class="slide-image slide-image-1">
                 <img src="img/selfie-stick.png" class="slider-image" width="384" height="486" alt="Селфи-палка">
               </div>
@@ -94,6 +95,7 @@
               </div>
             </div> <!-- /.slide -->
             <div class="slide slide-2">
+              <div class="slider-indicator slider-indicator-2">02</div>
               <div class="slide-image slide-image-2">
                 <img src="img/fitness-bracelet.png" class="slider-image" width="345" height="485" alt="Фитнес-браслет">
               </div>
@@ -114,6 +116,7 @@
               </div>
             </div> <!-- /.slide -->
             <div class="slide slide-3">
+              <div class="slider-indicator slider-indicator-3">03</div>
               <div class="slide-image slide-image-3">
                 <img src="img/quadcopter.png" class="slider-image" width="526" height="334" alt="Квадрокоптер">
               </div>
@@ -264,32 +267,8 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div class="footer-columns">
-          <div class="footer-column footer-column-1">
+          <div class="footer-row footer-row-1">
             <img class="logo-device footer-logo-device" src="img/logo-yellow.svg" width="163" height="35" alt="Логотип Device">
-            <address>г.Москва, ул.Строителей,15</address>
-          </div>
-          <div class="footer-column footer-column-2">
-            <nav class="footer-nav">
-              <ul class="nav-list footer-nav-list">
-                <li class="nav-item footer-nav-item">
-                  <a href="delivery.html" class="nav-link footer-nav-link ">Доставка</a>
-                </li>
-                <li class="footer-nav-item">
-                  <a href="warranty.html" class="nav-link footer-nav-link">Гарантия</a>
-                </li>
-                <li class="footer-nav-item">
-                  <a href="contacts.html" class="nav-link footer-nav-link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="social-network">
-              <li class="social-network-item"><a class="social-network-link social-network-link-1" href="#" aria-label="Faceboook"></a></li>
-              <li class="social-network-item"><a class="social-network-link social-network-link-2" href="#" aria-label="Instagram"></a></li>
-              <li class="social-network-item"><a class="social-network-link social-network-link-3" href="#" aria-label="Twitter"></a></li>
-            </ul>
-          </div>
-          <div class="footer-column footer-column-3">
             <ul class="footer-user-list user-list">
               <li class="footer-user-item footer-user-item-1">
                 <a href="enter.html" class="user-link footer-user-link footer-user-link-1">Войти</a>
@@ -301,7 +280,30 @@
                 <a href="cart.html" class="user-link footer-user-link footer-user-link-3">Корзина</a>
               </li>
             </ul>
+          </div>
+          <div class="footer-row footer-row-2">
+            <address>г.Москва, ул.Строителей,15</address>
+            <nav class="footer-nav">
+              <ul class="nav-list footer-nav-list">
+                <li class="nav-item footer-nav-item-1">
+                  <a href="delivery.html" class="nav-link footer-nav-link ">Доставка</a>
+                </li>
+                <li class="footer-nav-item-2">
+                  <a href="warranty.html" class="nav-link footer-nav-link">Гарантия</a>
+                </li>
+                <li class="footer-nav-item-3">
+                  <a href="contacts.html" class="nav-link footer-nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
             <a class="phone" href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
+          </div>
+          <div class="footer-row footer-row-3">
+            <ul class="social-network">
+              <li class="social-network-item"><a class="social-network-link social-network-link-1" href="#" aria-label="Faceboook"></a></li>
+              <li class="social-network-item"><a class="social-network-link social-network-link-2" href="#" aria-label="Instagram"></a></li>
+              <li class="social-network-item"><a class="social-network-link social-network-link-3" href="#" aria-label="Twitter"></a></li>
+            </ul>
             <div><a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a></div>
           </div>
         </div>
@@ -317,11 +319,11 @@
         </div>
         <div class="modal-field modal-field-2">
           <label class="modal-titre" for="email">Ваш e-mail:</label>
-          <input class="modal-input modal-email" type="email" id="email" name="email-field" placeholder="email@example.com">
+          <input class="modal-input modal-email error" type="email" id="email" name="email-field" placeholder="email@example.com">
         </div>
         <div class="modal-field modal-field-3">
           <label class="modal-titre" for="message">Текст письма:</label>
-          <textarea class="modal-input modal-message" id="message" name="message-field" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-input modal-message error" id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
         <button class="more more-3" type="submit">Отправить</button>
       </form>
