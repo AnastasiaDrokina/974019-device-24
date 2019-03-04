@@ -1,6 +1,6 @@
 /********/
 /* base */
-/* html Скопировала с вк, так по умолчанию.*/
+/* html по умолчанию ВК*/
 html {
   box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
   font-weight: 300;
   font-size: 15px;
 }
-/* visually-hidden Скопировала с демки, так по умолчанию.*/
+/* visually-hidden По умолчанию Демка*/
 .visually-hidden:not(:focus):not(:active){
   position: absolute;
   width: 1px;
@@ -85,7 +85,6 @@ h1 {
 .nav-link:active {
   opacity: 0.3;
 }
-
 /**********/
 /* header */
 .page-header {
@@ -234,6 +233,12 @@ h1 {
 .nav-catalog-item-small-3 {
   margin-top: 14px;
 }
+.nav-catalog-item-small:hover {
+  opacity: 0.6;
+}
+.nav-catalog-item-small:active {
+  opacity: 0.3;
+}
 .header-nav-item {
   margin-right: 38px;
 }
@@ -251,7 +256,6 @@ h1 {
   margin-left: 14px;
   opacity: 0.3;
 }
-
 /****************/
 /* main general */
 .button-color {
@@ -285,6 +289,7 @@ h1 {
   justify-content: space-between;
   padding-left: 90px;
   position: relative;
+  z-index: 1;
 }
 .container-narrow {
   padding-left: 60px;
@@ -315,6 +320,7 @@ h1 {
   position: absolute;
   right: 65px;
   top: -26px;
+  z-index: -1;
 }
 .slide-image-3 {
   margin-top: 53px;
@@ -354,7 +360,6 @@ h1 {
   letter-spacing: 0.15px;
   line-height: 30px;
   margin-bottom: 52px;
-
 }
 .slide-button {
   font-family: "Gilroy","Arial", sans-serif;
@@ -445,7 +450,6 @@ h1 {
   white-space: nowrap;
   margin-top: 6px;
 }
-
 /* section "categories" */
 .categories {
   padding: 80px 0 165px 0;
@@ -520,7 +524,6 @@ margin-bottom: 36px;
 .categories-link:active .categories-square::after {
   opacity: 0.3;
 }
-
 /* section "services" */
 .services {
   background: rgb(229, 229, 229);
@@ -649,7 +652,6 @@ margin-bottom: 36px;
   width: 156px;
   height: 186px;
 }
-
 /* section "partners" */
 .partners {
   padding-top: 94px;
@@ -678,7 +680,7 @@ margin-bottom: 36px;
 }
 /* section "about-contacts" */
 .about-contacts {
-  padding: 99px 0 89px 0;
+  padding: 99px 0 85px 0;
 }
 .about-contacts-columns {
   display: flex;
@@ -714,13 +716,27 @@ margin-bottom: 36px;
   margin-top: 44px;
 }
 .about-us-list {
-  margin-top: 64px;
+  margin: 64px 0 0 0;
+  list-style: none;
+  padding: 0;
+  position: relative;
 }
 .about-us-item {
   font-family: "Gilroy","Arial", sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
-  margin-top: 22px;
+  margin-top: 20px;
+  padding-left: 36px;
+}
+.about-us-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid rgb(229, 229, 229);
+  position: absolute;
+  left: 0;
 }
 .about-us p,
 .contacts p {
@@ -764,7 +780,6 @@ margin-bottom: 36px;
   top: 8px;
   left: -41px;
 }
-
 /****************/
 /* main catalog */
 .catalog .page-header {
@@ -865,13 +880,12 @@ margin-bottom: 36px;
 .pagination-button-forward {
   margin-left: 232px;
 }
-
 /**********/
 /* footer */
 .page-footer {
   background: rgb(70, 70, 70);
   color: rgb(255, 255, 255);
-  padding-top: 65px;
+  padding-top: 63px;
   padding-bottom: 66px;
 }
 .page-footer a {
@@ -1099,5 +1113,4 @@ address {
   z-index: 20;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   display: none;
-
 }
