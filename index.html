@@ -36,33 +36,33 @@
       <nav class="header-nav-container">
         <div class="header-nav-column">
           <a href="catalog.html" class="nav-link header-nav-link header-nav-link-plus">Каталог товаров</a>
+          <ul class="nav-catalog">
+            <li class="nav-catalog-item nav-catalog-item-1">
+              <ul class="nav-catalog-list-small">
+                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                  <a href="#">Виртуальная реальность</a></li>
+                <li class="nav-catalog-item-small nav-catalog-item-small-2">
+                    <a href="#">Моноподы для селфи</a></li>
+                <li class="nav-catalog-item-small nav-catalog-item-small-3">
+                    <a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="nav-catalog-item nav-catalog-item-2">
+              <ul class="nav-catalog-list-small">
+                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                    <a href="#">Фитнес-браслеты</a></li>
+                <li class="nav-catalog-item-small nav-catalog-item-small-2">
+                  <a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li class="nav-catalog-item nav-catalog-item-3">
+              <ul class="nav-catalog-list-small">
+                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                  <a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <ul class="nav-catalog">
-          <li class="nav-catalog-item nav-catalog-item-1">
-            <ul class="nav-catalog-list-small">
-              <li class="nav-catalog-item-small nav-catalog-item-small-1">
-                <a href="#">Виртуальная реальность</a></li>
-              <li class="nav-catalog-item-small nav-catalog-item-small-2">
-                 <a href="#">Моноподы для селфи</a></li>
-              <li class="nav-catalog-item-small nav-catalog-item-small-3">
-                 <a href="#">Экшн-камеры</a></li>
-            </ul>
-          </li>
-          <li class="nav-catalog-item nav-catalog-item-2">
-            <ul class="nav-catalog-list-small">
-              <li class="nav-catalog-item-small nav-catalog-item-small-1">
-                 <a href="#">Фитнес-браслеты</a></li>
-              <li class="nav-catalog-item-small nav-catalog-item-small-2">
-                <a href="#">Умные часы</a></li>
-            </ul>
-          </li>
-          <li class="nav-catalog-item nav-catalog-item-3">
-            <ul class="nav-catalog-list-small">
-              <li class="nav-catalog-item-small nav-catalog-item-small-1">
-                <a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-        </ul>
         <div class="header-nav-column">
           <ul class="nav-list header-nav-list">
             <li class="nav-item header-nav-item header-nav-item-1">
@@ -208,13 +208,16 @@
       <section class="services">
         <div class="container">
           <div class="services-item">
+            <input type="radio" class="hidden services-input" id="service-1" checked name="services">
+            <input type="radio" class="hidden services-input" id="service-2" name="services">
+            <input type="radio" class="hidden services-input" id="service-3" name="services">
             <div class="services-list">
-              <button class="services-button services-button-1 active">Доставка</button>
-              <button class="services-button services-button-2">Гарантия</button>
-              <button class="services-button services-button-3">Кредит</button>
+              <label for="service-1" class="services-button services-button-1">Доставка</label>
+              <label for="service-2" class="services-button services-button-2">Гарантия</label>
+              <label for="service-3" class="services-button services-button-3">Кредит</label>
             </div>
             <div class="services-description">
-              <div class="services-content services-content-1 active">
+              <div class="services-content services-content-1">
                 <div class="services-text">
                   <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
