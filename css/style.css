@@ -1126,10 +1126,6 @@ margin-bottom: 16px;
   font-weight: 300;
   color: rgb(0, 0, 0);
 }
-.filter-input:focus + .filter-label,
-.filter-input-radio:focus + .filter-label-radio {
-  outline: -webkit-focus-ring-color auto 5px;
-}
 .filter-label,
 .filter-label-radio {
   cursor: pointer;
