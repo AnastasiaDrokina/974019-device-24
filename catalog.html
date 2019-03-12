@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="catalog-main">
-              <div class="filter">
+              <form action="https://echo.htmlacademy.ru" method="post" class="filter">
                 <div class="filter-container">
                   <div class="filter-border">
                     <form method="get" action="https://echo.htmlacademy.ru">
@@ -106,7 +106,7 @@
                           </div>
                           <div class="toggle toggle-min"></div>
                           <div class="toggle toggle-max"></div>
-                        </div>
+                          </div>
                           <div class="price-controls">
                             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                             <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
@@ -116,44 +116,42 @@
                     </form>
                   </div>
                   <div class="filter-border">
-                    <form action="https://echo.htmlacademy.ru" method="post">
                     <p>Цвет</p>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="color-black" name="name-color-black" checked>
-                      <label for="color-black" class="filters-label">Черный</label>
+                      <label for="color-black" class="filter-label">Черный</label>
                     </div>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="color-white" name="name-color-white">
-                      <label for="color-white" class="filters-label">Белый</label>
+                      <label for="color-white" class="filter-label">Белый</label>
                     </div>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="color-blue" name="name-color-blue" checked>
-                      <label for="color-blue" class="filters-label">Синий</label>
+                      <label for="color-blue" class="filter-label">Синий</label>
                     </div>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="color-red" name="name-color-red" checked>
-                      <label for="color-red" class="filters-label">Красный</label>
+                      <label for="color-red" class="filter-label">Красный</label>
                     </div>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="color-pink" name="name-color-pink">
-                      <label for="color-pink" class="filters-label">Розовый</label>
+                      <label for="color-pink" class="filter-label">Розовый</label>
                     </div>
                   </div>
                   <div class="filter-border">
                     <p>Bluetooth</p>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-radio" type="radio" id="bluetooth-yes" name="bluetooth" value="Yes" checked>
-                      <label for="bluetooth-yes" class="filters-label-radio">Есть</label>
+                      <label for="bluetooth-yes" class="filter-label-radio">Есть</label>
                     </div>
                     <div class="filter-option">
                       <input class="visually-hidden filter-input filter-input-radio" type="radio" id="bluetooth-no" name="bluetooth" value="No">
-                      <label for="bluetooth-no" class="filters-label-radio">Нет</label>
+                      <label for="bluetooth-no" class="filter-label-radio">Нет</label>
                     </div>
-                  </form>
                   </div>
                   <button type="submit" class="more more-filter">Показать</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class="box box-right">
@@ -162,7 +160,7 @@
                 <p class="catalog-sort-title">Сортировка:</p>
                 <ul class="catalog-sort-list">
                   <li class="catalog-sort-item catalog-sort-item-1">
-                    <a href="#" class="catalog-sort-link">По цене</a>
+                    <a href="#" class="catalog-sort-link active">По цене</a>
                   </li>
                   <li class="catalog-sort-item catalog-sort-item-2">
                     <a href="#" class="catalog-sort-link">По типу</a>
@@ -174,7 +172,7 @@
                 <a href="#" class="catalog-sort-order catalog-sort-order-1">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
-                <a href="#" class="catalog-sort-order catalog-sort-order-2">
+                <a href="#" class="catalog-sort-order catalog-sort-order-2 active">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </div>
@@ -194,7 +192,7 @@
                       <div class="product-caption">
                         <div class="product-caption-content">
                           <a href="#" class="more more-product product-compare">В корзину</a>
-                          <a href="#">Добавить к сравнению</a>
+                          <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                         <img src="img/amateur-selfie-stick.jpg" class="product-image" width="360" height="380" alt="Любительская селфи-палка">
                       </div>
@@ -211,7 +209,7 @@
                       <div class="product-caption">
                         <div class="product-caption-content">
                           <a href="#" class="more more-product product-compare">В корзину</a>
-                          <a href="#">Добавить к сравнению</a>
+                          <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                         <img src="img/professional-selfie-stick.jpg" class="product-image" width="360" height="380" alt="Профессиональная селфи-палка">
                       </div>
@@ -228,7 +226,7 @@
                       <div class="product-caption">
                         <div class="product-caption-content">
                           <a href="#" class="more more-product product-compare">В корзину</a>
-                          <a href="#">Добавить к сравнению</a>
+                          <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                         <img src="img/unsinkable-selfie-stick.jpg" class="product-image" width="360" height="380" alt="Непотопляемая селфи-палка">
                       </div>
@@ -246,7 +244,7 @@
                         <span class="product-new">New</span>
                         <div class="product-caption-content">
                           <a href="#" class="more more-product product-compare">В корзину</a>
-                          <a href="#">Добавить к сравнению</a>
+                          <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                         <img src="img/follow-me-selfie-stick.jpg" class="product-image" width="360" height="380" alt="Селфи-палка Следуй за мной">
                       </div>
@@ -254,17 +252,17 @@
                   </li>
                 </ul>
                 <ul class="pagination-list">
-                  <li class="pagination-item pagination-button-back"><a href="#">Назад</a></li>
+                  <li class="pagination-item pagination-button pagination-button-back"><a class="pagination-button-link" href="#">Назад</a></li>
                   <li class="pagination-item">1</li>
                   <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
                   <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-                  <li class="pagination-item pagination-button-forward"><a href="#">Вперед</a></li>
+                  <li class="pagination-item pagination-button pagination-button-forward"><a class="pagination-button-link" href="#">Вперед</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="container">
