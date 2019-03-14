@@ -285,7 +285,7 @@
             <div class="contacts">
               <h2 class="about-us-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-              <a class="contacts-map"  href="maps.html">
+              <a class="contacts-map contacts-button-map"  href="maps.html">
                 <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15)">
               </a>
               <a href="writetous.html" class="more more-2">напишите нам</a>
@@ -347,11 +347,11 @@
         </div>
         <div class="modal-field modal-field-2">
           <label class="modal-title" for="email">Ваш e-mail:</label>
-          <input class="modal-input modal-email error" type="email" id="email" name="email-field" placeholder="email@example.com">
+          <input class="modal-input modal-email" type="email" id="email" name="email-field" placeholder="email@example.com">
         </div>
         <div class="modal-field modal-field-3">
           <label class="modal-title" for="message">Текст письма:</label>
-          <textarea class="modal-input modal-message error" id="message" name="message-field" placeholder="В свободной форме"></textarea>
+          <textarea class="modal-input modal-message" id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
         <button class="more more-modal" type="submit">Отправить</button>
       </form>
@@ -363,31 +363,28 @@
     </div>
 
     <script>
-      var linkContact = document.querySelector('.more-2');
-      var modalContact = document.querySelector('.modal-contact');
-      var closeModal = modalContact.querySelector('.modal-close');
+      var linkContact = document.querySelector(".more-2");
+      var modalContact = document.querySelector(".modal-contact");
+      var closeModal = modalContact.querySelector(".modal-close");
       var fullname = modalContact.querySelector('[name="fullname-field"]');
       var email = modalContact.querySelector('[name="email-field"]');
-      var modalForm = modalContact.querySelector('.modal-form');
+      var modalForm = modalContact.querySelector(".modal-form");
 
-
-      linkContact.addEventListener('click', function(event) {
-        event.preventDefault();
-        modalContact.classList.add('show');
+      linkContact.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modalContact.classList.add("show");
         fullname.focus();
       });
 
-
-      closeModal.addEventListener('click', function(event) {
-        event.preventDefault();
-        modalContact.classList.remove('show');
+      closeModal.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        modalContact.classList.remove("show");
       });
 
-      modalForm.addEventListener('submit', function(event) {
-        
+      modalForm.addEventListener("submit", function(evt) {
         if (!fullname.value || !email.value) {
-          event.preventDefault();
-          console.log("Нужно ввести логин и пароль");
+          evt.preventDefault();
+          console.log("Нужно ввести имя и email");
         } else {
           console.log("pas vide")
         }
@@ -401,6 +398,30 @@
           }
         }
       });
+
+      var mapLink = document.querySelector(".contacts-button-map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("show");
+      });
+
+      mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (mapPopup.classList.contains("show")) {
+            mapPopup.classList.remove("show");
+          }
+        }
+      });
     </script>
+
   </body>
 </html>
