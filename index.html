@@ -361,5 +361,46 @@
       <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
       <button class="modal-close" type="button">Закрыть</button>
     </div>
+
+    <script>
+      var linkContact = document.querySelector('.more-2');
+      var modalContact = document.querySelector('.modal-contact');
+      var closeModal = modalContact.querySelector('.modal-close');
+      var fullname = modalContact.querySelector('[name="fullname-field"]');
+      var email = modalContact.querySelector('[name="email-field"]');
+      var modalForm = modalContact.querySelector('.modal-form');
+
+
+      linkContact.addEventListener('click', function(event) {
+        event.preventDefault();
+        modalContact.classList.add('show');
+        fullname.focus();
+      });
+
+
+      closeModal.addEventListener('click', function(event) {
+        event.preventDefault();
+        modalContact.classList.remove('show');
+      });
+
+      modalForm.addEventListener('submit', function(event) {
+        
+        if (!fullname.value || !email.value) {
+          event.preventDefault();
+          console.log("Нужно ввести логин и пароль");
+        } else {
+          console.log("pas vide")
+        }
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (modalContact.classList.contains("show")) {
+            modalContact.classList.remove("show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
