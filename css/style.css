@@ -50,6 +50,42 @@ h1 {
 .hidden {
   display: none;
 }
+
+.button-line {
+  font-family: "Gilroy","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0 45px;
+  border: 0;
+  background: none;
+  text-align: center;
+}
+.button-line:focus {
+  outline: none;
+}
+.button-line::before {
+  content: "";
+  height: 8px;
+  background: rgb(240, 197, 46);
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: -4px;
+}
+.button-line:hover::before {
+  height: 40px;
+  top: -7px;
+  margin-top: 0;
+}
 /**********/
 /* header-footer general */
 .logo-device:hover {
@@ -163,6 +199,9 @@ h1 {
 .search-button:active {
   background:rgb(0, 0, 0);
   color: rgb(255, 255, 255, 0.3);
+}
+.search-button:focus {
+  opacity: 1;
 }
 .header-user-container {
   display: flex;
@@ -298,6 +337,7 @@ h1 {
   padding-left: 90px;
   position: relative;
   z-index: 1;
+  height: 490px;
 }
 .container-narrow {
   padding-left: 60px;
@@ -329,6 +369,9 @@ h1 {
   right: 65px;
   top: -26px;
   z-index: -1;
+}
+.slide-image {
+  width: 526px;
 }
 .slide-image-3 {
   margin-top: 53px;
@@ -370,36 +413,7 @@ h1 {
   margin-bottom: 52px;
 }
 .slide-button {
-  font-family: "Gilroy","Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  display: block;
-  position: relative;
-  left: 40px;
   margin-bottom: 73px;
-  width: 133px;
-}
-.slide-button::before {
-  content: "";
-  height: 8px;
-  background: rgb(240, 197, 46);
-  position: absolute;
-  width: 220px;
-  top: 8px;
-  left: -44px;
-  z-index: -1;
-}
-.slide-button:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  width: 220px;
-  top: -7px;
-  left: -40px;
-  z-index: -1;
 }
 .slide-button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -560,67 +574,35 @@ margin-bottom: 36px;
   margin-left: 6px;
 }
 .services-button {
-  background: none;
-  border: none;
+  width: 160px;
   padding: 0;
-  text-align: left;
-  font-family: "Gilroy","Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  position: relative;
-  cursor: pointer;
-  width: 277px;
-  height: 40px;
 }
-.services-button::before {
-  content: "";
-  height: 8px;
-  background: rgb(240, 197, 46);
-  position: absolute;
-  width: 160px;
-  top: 8px;
-  left: 0;
-  z-index: -1;
-}
-.services-button:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  position: absolute;
-  width: 160px;
-  top: -6px;
-  left: 0;
-  z-index: -1;
-}
-
-.services-button-1 {
-  padding-left: 21px;
-}
-.services-button-2 {
+.services-button + .services-button {
   margin-top: 40px;
-  padding-left: 27px;
 }
-.services-button-3 {
-  padding-left: 42px;
-  margin-top: 40px;
+#service-1:focus ~ .services-list .services-button-1::before,
+#service-2:focus ~ .services-list .services-button-2::before,
+#service-3:focus ~ .services-list .services-button-3::before {
+  height: 40px;
+  top: -7px;
+  margin-top: 0;
 }
 
 #service-1:checked ~ .services-list .services-button-1,
 #service-2:checked ~ .services-list .services-button-2,
 #service-3:checked ~ .services-list .services-button-3 {
+  width: auto;
   color: rgb(240, 197, 46);
   padding-left: 17px;
+  text-align: left;
 }
 #service-1:checked ~ .services-list .services-button-1::before,
 #service-2:checked ~ .services-list .services-button-2::before,
 #service-3:checked ~ .services-list .services-button-3::before {
   height: 40px;
   background: rgb(0, 0, 0);
-  width: 278px;
-  top: -6px;
+  top: -7px;
+  margin-top: 0;
 }
 
 .services-content {
@@ -752,64 +734,11 @@ margin-bottom: 36px;
   margin-top: 44px;
   line-height: 24px;
 }
-.more {
-  font-family: "Gilroy","Arial", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  display: block;
-  position: relative;
-  cursor: pointer;
-  z-index: 1;
-}
-.more:focus {
-  outline: none;
-}
-.more::before {
-  content: "";
-  height: 8px;
-  background: rgb(240, 197, 46);
-  position: absolute;
-  width: 260px;
-  top: 7px;
-  left: -20px;
-  z-index: -1;
-}
-.more-1 {
+.about-us .button-line {
   margin-top: 72px;
-  margin-left: 24px;
 }
-.more-1::before {
-  top: 8px;
-  left: -26px;
-}
-.more-1:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  width: 260px;
-  top: -7px;
-  left: -24px;
-  z-index: -1;
-}
-.more-2 {
+.contacts .button-line {
   margin-top: 82px;
-  margin-left: 41px;
-}
-.more-2::before {
-  top: 8px;
-  left: -41px;
-}
-.more-2:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  width: 260px;
-  top: -7px;
-  left: -41px;
-  z-index: -1;
 }
 /****************/
 /* main catalog */
@@ -1184,25 +1113,6 @@ margin-bottom: 16px;
 .filter-option {
   margin-bottom: 16px;
 }
-.more-filter {
-  border: 0;
-  background: none;
-  padding-left: 42px;
-}
-.more-filter::before {
-  width: 200px;
-  left: 0;
-  top: 9px;
-}
-.more-filter:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  width: 220px;
-  top: -7px;
-  left: -14px;
-  z-index: -1;
-}
 .product {
   display: flex;
   order: 1;
@@ -1228,6 +1138,7 @@ margin-bottom: 16px;
   line-height: 24px;
   font-weight: 300;
   color: rgb(70, 70, 70);
+  white-space: nowrap;
 }
 .pagination-list {
   margin: -12px 0 77px 0;
@@ -1486,7 +1397,7 @@ address {
   background: rgb(242, 242, 242);
   opacity: 0.5;
   padding: 20px 20px;
-  border: 0;
+  border: 2px solid transparent;
 }
 .modal-input:hover {
   background: rgb(234, 234, 234);
@@ -1494,7 +1405,7 @@ address {
 .modal-input:focus {
   background: rgb(255, 255, 255);
   color: rgb(70, 70, 70);
-  border: 2px solid rgba(240, 197, 46, 0.5);
+  border-color: rgba(240, 197, 46, 0.5);
 }
 .error {
   background: rgb(246, 218, 218);
@@ -1510,22 +1421,8 @@ address {
 .more-modal {
   border: 0;
   background: 0;
-  width: 200px;
   margin-top: 55px;
   margin-left: 27px;
-}
-.more-modal::before {
-  top: 8px;
-  left: -26px;
-}
-.more-modal:hover::before {
-  content: "";
-  height: 40px;
-  background: rgb(240, 197, 46);
-  width: 260px;
-  top: -7px;
-  left: -24px;
-  z-index: -1;
 }
 .modal-map {
   top: 50%;

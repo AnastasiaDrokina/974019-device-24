@@ -14,7 +14,7 @@
         <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
       </a>
       <div class="header-user-container">
-        <form class="header-user-column header-search">
+        <form method="get" action="/catalog.html" class="header-user-column header-search">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
           <input class="search-field" type="search" id="search" name="name-search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
@@ -103,7 +103,7 @@
                 <p class="slide-text slide-text-1">
                   Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <a class="button slide-button" href="#">Подробнее</a>
+                <a class="button-line slide-button" href="#">Подробнее</a>
                 <ul class="slide-stats-list">
                   <li class="slide-stats-item">
                     <span class="slide-stats slide-stats-number">8,5 м</span>
@@ -132,7 +132,7 @@
                 <p class="slide-text slide-text-2">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
-                <a class="button slide-button" href="#">Подробнее</a>
+                <a class="button-line slide-button" href="#">Подробнее</a>
                 <ul class="slide-stats-list">
                   <li class="slide-stats-item">
                     <span class="slide-stats slide-stats-number">48 часов</span>
@@ -153,7 +153,7 @@
                 <p class="slide-text slide-text-3">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a class="button slide-button" href="#">Подробнее</a>
+                <a class="button-line slide-button" href="#">Подробнее</a>
                 <ul class="slide-stats-list">
                   <li class="slide-stats-item">
                     <span class="slide-stats slide-stats-number">800 м</span>
@@ -208,13 +208,13 @@
       <section class="services">
         <div class="container">
           <div class="services-item">
-            <input type="radio" class="hidden services-input" id="service-1" checked name="services">
-            <input type="radio" class="hidden services-input" id="service-2" name="services">
-            <input type="radio" class="hidden services-input" id="service-3" name="services">
+            <input type="radio" class="visually-hidden services-input" id="service-1" checked name="services">
+            <input type="radio" class="visually-hidden services-input" id="service-2" name="services">
+            <input type="radio" class="visually-hidden services-input" id="service-3" name="services">
             <div class="services-list">
-              <label for="service-1" class="services-button services-button-1">Доставка</label>
-              <label for="service-2" class="services-button services-button-2">Гарантия</label>
-              <label for="service-3" class="services-button services-button-3">Кредит</label>
+              <label for="service-1" class="button-line services-button services-button-1">Доставка</label>
+              <label for="service-2" class="button-line services-button services-button-2">Гарантия</label>
+              <label for="service-3" class="button-line services-button services-button-3">Кредит</label>
             </div>
             <div class="services-description">
               <div class="services-content services-content-1">
@@ -280,15 +280,15 @@
                 <li class="about-us-item">Автотрейдинг</li>
                 <li class="about-us-item">ЖелДорЭкспедиция</li>
               </ul>
-              <a href="moreaboutus.html" class="more more-1">подробнее о нас</a>
+              <a href="moreaboutus.html" class="button-line">подробнее о нас</a>
             </div>
             <div class="contacts">
               <h2 class="about-us-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <a class="contacts-map contacts-button-map"  href="maps.html">
-                <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15)">
+                <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
               </a>
-              <a href="writetous.html" class="more more-2">напишите нам</a>
+              <a href="writetous.html" class="button-line button-modal-contact">напишите нам</a>
             </div>
           </div>
         </div>
@@ -353,17 +353,17 @@
           <label class="modal-title" for="message">Текст письма:</label>
           <textarea class="modal-input modal-message" id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
-        <button class="more more-modal" type="submit">Отправить</button>
+        <button class="button-line more-modal" type="submit">Отправить</button>
       </form>
     </div>
     <div class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map-big-jpg.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfr!4v1552742332601" width="960" height="599" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </div>
 
     <script>
-      var linkContact = document.querySelector(".more-2");
+      var linkContact = document.querySelector(".button-modal-contact");
       var modalContact = document.querySelector(".modal-contact");
       var closeModal = modalContact.querySelector(".modal-close");
       var fullname = modalContact.querySelector('[name="fullname-field"]');
