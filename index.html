@@ -285,7 +285,7 @@
             <div class="contacts">
               <h2 class="about-us-title">Контакты</h2>
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-              <a class="contacts-map contacts-button-map"  href="maps.html">
+              <a class="contacts-map contacts-button-map"  href="img/map-big.jpg">
                 <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
               </a>
               <a href="writetous.html" class="button-line button-modal-contact">напишите нам</a>
@@ -367,6 +367,7 @@
       var closeModal = modalContact.querySelector(".modal-close");
       var fullname = modalContact.querySelector('[name="fullname-field"]');
       var email = modalContact.querySelector('[name="email-field"]');
+      var message = modalContact.querySelector('[name="message-field"]');
       var modalForm = modalContact.querySelector(".modal-form");
 
       linkContact.addEventListener("click", function(evt) {
@@ -378,14 +379,27 @@
       closeModal.addEventListener("click", function(evt) {
         evt.preventDefault();
         modalContact.classList.remove("show");
+        modalContact.classList.remove("modal-error");
+        fullname.classList.remove("error");
+        email.classList.remove("error");
+        message.classList.remove("error");
       });
 
       modalForm.addEventListener("submit", function(evt) {
-        if (!fullname.value || !email.value) {
+        if (!fullname.value || !email.value || !message.value) {
           evt.preventDefault();
           console.log("Нужно ввести имя и email");
-        } else {
-          console.log("pas vide")
+          modalContact.classList.add("modal-error");
+        }
+
+        if (!fullname.value) {
+          fullname.classList.add("error");
+        }
+        if (!email.value) {
+          email.classList.add("error");
+        }
+        if (!message.value) {
+          message.classList.add("error");
         }
       });
 
@@ -394,6 +408,10 @@
           evt.preventDefault();
           if (modalContact.classList.contains("show")) {
             modalContact.classList.remove("show");
+            modalContact.classList.remove("modal-error");
+            fullname.classList.remove("error");
+            email.classList.remove("error");
+            message.classList.remove("error");
           }
         }
       });

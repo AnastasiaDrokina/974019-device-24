@@ -262,9 +262,9 @@ h1 {
   left: 0;
   right: 0;
   padding: 25px 60px 0 60px;
-  height: 164px;
+  min-height: 164px;
   top: 135px;
-  z-index: 2;
+  z-index: 21;
   display:none;
 }
 .header-nav-column:hover .nav-catalog {
@@ -342,7 +342,7 @@ h1 {
   padding-left: 90px;
   position: relative;
   z-index: 1;
-  height: 490px;
+  min-height: 490px;
 }
 .container-narrow {
   padding-left: 60px;
@@ -554,12 +554,12 @@ margin-bottom: 36px;
 }
 .services-item {
   display: flex;
-  height: 288px;
+  min-height: 288px;
   align-items: center;
 }
 .services-list {
   width: 278px;
-  height: 319px;
+  min-height: 319px;
   border-right: 7px solid  rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -909,10 +909,12 @@ margin-bottom: 36px;
   margin-top: 11px;
 }
 .catalog-sort-list {
+  width: 490px;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .catalog-sort-item:last-child {
@@ -966,9 +968,8 @@ margin-bottom: 36px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 70px;
   list-style: none;
-  justify-content: flex-end;
 }
 .catalog-products-item {
   width: 360px;
@@ -1356,13 +1357,13 @@ address {
   z-index: 20;
   display: none;
 }
-.modal-contact.show {
-  display: block;
-  animation: bounce 0.6s;
-}
+.modal-contact.show,
 .modal-map.show {
   display: block;
   animation: bounce 0.6s;
+}
+.modal-contact.modal-error {
+  animation: shake 0.6s;
 }
 .modal-close {
   width: 55px;
@@ -1450,6 +1451,9 @@ address {
 .modal-map iframe {
   border: none;
 }
+
+/**************/
+/* animations */
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1465,6 +1469,28 @@ address {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
