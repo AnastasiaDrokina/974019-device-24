@@ -1,6 +1,6 @@
 /********/
 /* base */
-/* html по умолчанию ВК*/
+
 html {
   box-sizing: border-box;
 }
@@ -13,7 +13,6 @@ body {
   font-weight: 300;
   font-size: 15px;
 }
-/* visually-hidden По умолчанию Демка*/
 .visually-hidden:not(:focus):not(:active),
 label.visually-hidden,
 input[type="checkbox"].visually-hidden,
@@ -44,9 +43,6 @@ h1 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.47px;
-}
-.hidden {
-  display: none;
 }
 .active {
   color: rgb(0, 0, 0);
@@ -93,6 +89,7 @@ h1 {
 }
 /**********/
 /* header-footer general */
+
 .logo-device:hover {
   opacity: 0.6;
 }
@@ -133,6 +130,7 @@ h1 {
 }
 /**********/
 /* header */
+
 .page-header {
   background: rgba(240, 197, 46, 0.5);
   height: 299px;
@@ -310,6 +308,7 @@ h1 {
 }
 /****************/
 /* main general */
+
 .button-color {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 18px;
@@ -325,6 +324,7 @@ h1 {
 }
 /*****************/
 /* main homepage */
+
 .homepage h2 {
   font-family: "Gilroy","Arial", sans-serif;
   font-size: 47px;
@@ -1075,7 +1075,6 @@ margin-bottom: 16px;
   height: 25px;
   background: url(../img/checkbox-off.svg) left top no-repeat transparent;
   margin-right: 13px;
-
 }
 .filter-input:checked + .filter-label::before {
   background-image: url(../img/checkbox-on.svg);
@@ -1091,7 +1090,6 @@ margin-bottom: 16px;
   height: 28px;
   background: url(../img/radio-off.svg) left top no-repeat transparent;
   margin-right: 13px;
-
 }
 .filter-input-radio:checked + .filter-label-radio::before {
   background-image: url(../img/radio-on.svg);
@@ -1209,6 +1207,7 @@ margin-bottom: 16px;
   text-transform: uppercase;
   margin: 0;
 }
+
 /**********/
 /* footer */
 .page-footer {
@@ -1341,6 +1340,7 @@ address {
 .page-footer-logo-html:active {
   opacity: 0.3;
 }
+
 /*********/
 /* modal */
 .modal-contact {
@@ -1477,7 +1477,6 @@ address {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1485,7 +1484,6 @@ address {
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
