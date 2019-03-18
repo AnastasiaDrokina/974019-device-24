@@ -173,32 +173,32 @@
         <div class="container">
           <ul class="categories-list">
             <li class="categories-item">
-              <a href="virtual-reality.html" class="categories-link categories-link-1">
+              <a href="catalog/virtual-reality.html" class="categories-link categories-link-1">
                 <div class="categories-square"></div>
                 Виртуальная реальность</a>
             </li>
             <li class="categories-item">
-              <a href="monopods-for-selfie.html" class="categories-link categories-link-2">
+              <a href="catalog/monopods-for-selfie.html" class="categories-link categories-link-2">
                 <div class="categories-square"></div>
                 Моноподы для селфи</a>
             </li>
             <li class="categories-item">
-              <a href="action-camera.html" class="categories-link categories-link-3">
+              <a href="catalog/action-camera.html" class="categories-link categories-link-3">
                 <div class="categories-square"></div>
                 Экшн-камеры</a>
             </li>
             <li class="categories-item">
-              <a href="fitness-bracelets.html" class="categories-link categories-link-4">
+              <a href="catalog/fitness-bracelets.html" class="categories-link categories-link-4">
                 <div class="categories-square"></div>
                 Фитнес-браслеты</a>
             </li>
             <li class="categories-item">
-              <a href="smart-watch.html" class="categories-link categories-link-5">
+              <a href="catalog/smart-watch.html" class="categories-link categories-link-5">
                 <div class="categories-square"></div>
                 Умные часы</a>
             </li>
             <li class="categories-item">
-              <a href="quadcopters.html" class="categories-link categories-link-6">
+              <a href="catalog/quadcopters.html" class="categories-link categories-link-6">
                 <div class="categories-square"></div>
                 Квадрокоптеры</a>
             </li>
@@ -361,83 +361,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfr!4v1552742332601" width="960" height="599" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </div>
-    <script>
-      var linkContact = document.querySelector(".button-modal-contact");
-      var modalContact = document.querySelector(".modal-contact");
-      var closeModal = modalContact.querySelector(".modal-close");
-      var fullname = modalContact.querySelector('[name="fullname-field"]');
-      var email = modalContact.querySelector('[name="email-field"]');
-      var message = modalContact.querySelector('[name="message-field"]');
-      var modalForm = modalContact.querySelector(".modal-form");
-
-      linkContact.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        modalContact.classList.add("show");
-        fullname.focus();
-      });
-
-      closeModal.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        modalContact.classList.remove("show");
-        modalContact.classList.remove("modal-error");
-        fullname.classList.remove("error");
-        email.classList.remove("error");
-        message.classList.remove("error");
-      });
-
-      modalForm.addEventListener("submit", function(evt) {
-        if (!fullname.value || !email.value || !message.value) {
-          evt.preventDefault();
-          console.log("Нужно ввести имя и email");
-          modalContact.classList.add("modal-error");
-        }
-
-        if (!fullname.value) {
-          fullname.classList.add("error");
-        }
-        if (!email.value) {
-          email.classList.add("error");
-        }
-        if (!message.value) {
-          message.classList.add("error");
-        }
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (modalContact.classList.contains("show")) {
-            modalContact.classList.remove("show");
-            modalContact.classList.remove("modal-error");
-            fullname.classList.remove("error");
-            email.classList.remove("error");
-            message.classList.remove("error");
-          }
-        }
-      });
-
-      var mapLink = document.querySelector(".contacts-button-map");
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = mapPopup.querySelector(".modal-close");
-
-      mapLink.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("show");
-      });
-
-      mapClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (mapPopup.classList.contains("show")) {
-            mapPopup.classList.remove("show");
-          }
-        }
-      });
-    </script>
+   <script src="js/script.js"></script>
   </body>
 </html>

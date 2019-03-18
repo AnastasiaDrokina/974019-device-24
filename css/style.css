@@ -398,6 +398,14 @@ h1 {
 #product-3:checked ~ .slider-navigation .slider-controls[for="product-3"]::before {
   display: block;
 }
+#product-1:focus-within ~ .slider-navigation .slider-controls[for="product-1"],
+#product-2:focus-within ~ .slider-navigation .slider-controls[for="product-2"],
+#product-3:focus-within ~ .slider-navigation .slider-controls[for="product-3"] {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
 .slide-content {
   width: 500px;
   margin-right: 63px;
@@ -443,6 +451,9 @@ h1 {
   top: 2px;
   left: 2px;
   display: none;
+}
+.slider-controls:focus::before {
+  outline: rgb(229, 151, 0) auto 5px;
 }
 .slide-stats {
   display: block;
@@ -671,7 +682,7 @@ margin-bottom: 36px;
 }
 /* section "about-contacts" */
 .about-contacts {
-  padding: 99px 0 85px 0;
+  padding: 92px 0 89px 0;
 }
 .about-contacts-columns {
   display: flex;
@@ -1071,13 +1082,15 @@ margin-bottom: 16px;
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 28px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
   background: url(../img/checkbox-off.svg) left top no-repeat transparent;
   margin-right: 13px;
 }
 .filter-input:checked + .filter-label::before {
   background-image: url(../img/checkbox-on.svg);
+  width: 27px;
+  height: 23px;
 }
 .filter-input:disabled + .filter-label {
   opacity: 0.25;
