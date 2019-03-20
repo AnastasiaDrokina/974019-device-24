@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="http://fonts.fontstorage.com/import/gilroy.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="homepage">
     <header class="page-header">
@@ -21,14 +21,14 @@
         </form>
         <div class="header-user-column">
           <ul class="user-list header-user-list ">
-            <li class="user-item header-user-item header-user-item-1">
-              <a href="enter.html" class="user-link header-user-link header-user-link-1">Войти</a>
+            <li class="user-item header-user-item header-user-item-enter">
+              <a href="enter.html" class="user-link header-user-link header-user-link-user">Войти</a>
             </li>
-            <li class="header-user-item header-user-item-2">
-              <a href="compare.html" class="user-link header-user-link header-user-link-2">Сравнить</a>
+            <li class="header-user-item header-user-item-compare">
+              <a href="compare.html" class="user-link header-user-link header-user-link-compare">Сравнить</a>
             </li>
-            <li class="header-user-item header-user-item-3">
-              <a href="cart.html" class="user-link header-user-link header-user-link-3">Корзина</a>
+            <li class="header-user-item header-user-item-cart">
+              <a href="cart.html" class="user-link header-user-link header-user-link-cart">Корзина</a>
             </li>
           </ul>
         </div>
@@ -37,27 +37,27 @@
         <div class="header-nav-column">
           <a href="catalog.html" class="nav-link header-nav-link header-nav-link-plus">Каталог товаров</a>
           <ul class="nav-catalog">
-            <li class="nav-catalog-item nav-catalog-item-1">
+            <li class="nav-catalog-item nav-catalog-item-first">
               <ul class="nav-catalog-list-small">
-                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                <li class="nav-catalog-item-small nav-catalog-item-small-first">
                   <a href="#">Виртуальная реальность</a></li>
-                <li class="nav-catalog-item-small nav-catalog-item-small-2">
+                <li class="nav-catalog-item-small nav-catalog-item-small-second">
                     <a href="#">Моноподы для селфи</a></li>
-                <li class="nav-catalog-item-small nav-catalog-item-small-3">
+                <li class="nav-catalog-item-small nav-catalog-item-small-third">
                     <a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
-            <li class="nav-catalog-item nav-catalog-item-2">
+            <li class="nav-catalog-item nav-catalog-item-second">
               <ul class="nav-catalog-list-small">
-                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                <li class="nav-catalog-item-small nav-catalog-item-small-first">
                     <a href="#">Фитнес-браслеты</a></li>
-                <li class="nav-catalog-item-small nav-catalog-item-small-2">
+                <li class="nav-catalog-item-small nav-catalog-item-small-second">
                   <a href="#">Умные часы</a></li>
               </ul>
             </li>
-            <li class="nav-catalog-item nav-catalog-item-3">
+            <li class="nav-catalog-item nav-catalog-item-third">
               <ul class="nav-catalog-list-small">
-                <li class="nav-catalog-item-small nav-catalog-item-small-1">
+                <li class="nav-catalog-item-small nav-catalog-item-small-first">
                   <a href="#">Квадрокоптеры</a></li>
               </ul>
             </li>
@@ -65,14 +65,14 @@
         </div>
         <div class="header-nav-column">
           <ul class="nav-list header-nav-list">
-            <li class="nav-item header-nav-item header-nav-item-1">
-              <a href="delivery.html" class="nav-link header-nav-link header-nav-link-1">Доставка</a>
+            <li class="nav-item header-nav-item">
+              <a href="delivery.html" class="nav-link header-nav-link">Доставка</a>
             </li>
-            <li class="header-nav-item header-nav-item-2">
-              <a href="warranty.html" class="nav-link header-nav-link header-nav-link-2">Гарантия</a>
+            <li class="header-nav-item">
+              <a href="warranty.html" class="nav-link header-nav-link">Гарантия</a>
             </li>
-            <li class="header-nav-item header-nav-item-3">
-              <a href="contacts.html" class="nav-link header-nav-link header-nav-link-3">Контакты</a>
+            <li class="header-nav-item header-nav-item-contacts">
+              <a href="contacts.html" class="nav-link header-nav-link">Контакты</a>
             </li>
           </ul>
         </div>
@@ -91,16 +91,16 @@
               <label for="product-2" class="slider-controls">Второй</label>
               <label for="product-3" class="slider-controls">Третий</label>
             </div>
-            <div class="slide slide-1">
+            <div class="slide slide-first">
               <div class="slider-indicator slider-indicator-1">01</div>
-              <div class="slide-image slide-image-1">
+              <div class="slide-image">
                 <img src="img/selfie-stick.png" class="slider-image" width="384" height="486" alt="Селфи-палка">
               </div>
               <div class="slide-content">
-                <h3 class="slide-title slide-title-1">
+                <h3 class="slide-title">
                   Делай селфи,<br> как Бен Стиллер!
                 </h3>
-                <p class="slide-text slide-text-1">
+                <p class="slide-text">
                   Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
                 <a class="button-line slide-button" href="#">Подробнее</a>
@@ -119,17 +119,17 @@
                   </li>
                 </ul>
               </div>
-            </div> <!-- /.slide -->
-            <div class="slide slide-2">
+            </div>
+            <div class="slide slide-second">
               <div class="slider-indicator slider-indicator-2">02</div>
-              <div class="slide-image slide-image-2">
+              <div class="slide-image">
                 <img src="img/fitness-bracelet.png" class="slider-image" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="slide-content">
-                <h3 class="slide-title slide-title-2">
+                <h3 class="slide-title">
                   Худеем<br> правильно!
                 </h3>
-                <p class="slide-text slide-text-2">
+                <p class="slide-text">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                 </p>
                 <a class="button-line slide-button" href="#">Подробнее</a>
@@ -140,17 +140,17 @@
                   </li>
                 </ul>
               </div>
-            </div> <!-- /.slide -->
-            <div class="slide slide-3">
+            </div>
+            <div class="slide slide-third">
               <div class="slider-indicator slider-indicator-3">03</div>
-              <div class="slide-image slide-image-3">
+              <div class="slide-image slide-image-quadcopter">
                 <img src="img/quadcopter.png" class="slider-image" width="526" height="334" alt="Квадрокоптер">
               </div>
               <div class="slide-content">
-                <h3 class="slide-title slide-title-3">
+                <h3 class="slide-title">
                   Порхает как бабочка,<br> жалит как пчела!
                 </h3>
-                <p class="slide-text slide-text-3">
+                <p class="slide-text">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
                 <a class="button-line slide-button" href="#">Подробнее</a>
@@ -165,40 +165,40 @@
                   </li>
                 </ul>
               </div>
-            </div> <!-- /.slide -->
-          </div> <!-- /.slider-container -->
-        </div> <!-- /.container -->
+            </div>
+          </div>
+        </div>
       </section>
       <section class="categories">
         <div class="container">
           <ul class="categories-list">
             <li class="categories-item">
-              <a href="catalog/virtual-reality.html" class="categories-link categories-link-1">
+              <a href="catalog/virtual-reality.html" class="categories-link categories-link-first">
                 <div class="categories-square"></div>
                 Виртуальная реальность</a>
             </li>
             <li class="categories-item">
-              <a href="catalog/monopods-for-selfie.html" class="categories-link categories-link-2">
+              <a href="catalog/monopods-for-selfie.html" class="categories-link categories-link-second">
                 <div class="categories-square"></div>
                 Моноподы для селфи</a>
             </li>
             <li class="categories-item">
-              <a href="catalog/action-camera.html" class="categories-link categories-link-3">
+              <a href="catalog/action-camera.html" class="categories-link categories-link-third">
                 <div class="categories-square"></div>
                 Экшн-камеры</a>
             </li>
             <li class="categories-item">
-              <a href="catalog/fitness-bracelets.html" class="categories-link categories-link-4">
+              <a href="catalog/fitness-bracelets.html" class="categories-link categories-link-fourth">
                 <div class="categories-square"></div>
                 Фитнес-браслеты</a>
             </li>
             <li class="categories-item">
-              <a href="catalog/smart-watch.html" class="categories-link categories-link-5">
+              <a href="catalog/smart-watch.html" class="categories-link categories-link-fifth">
                 <div class="categories-square"></div>
                 Умные часы</a>
             </li>
             <li class="categories-item">
-              <a href="catalog/quadcopters.html" class="categories-link categories-link-6">
+              <a href="catalog/quadcopters.html" class="categories-link categories-link-sixth">
                 <div class="categories-square"></div>
                 Квадрокоптеры</a>
             </li>
@@ -212,25 +212,25 @@
             <input type="radio" class="visually-hidden services-input" id="service-2" name="services">
             <input type="radio" class="visually-hidden services-input" id="service-3" name="services">
             <div class="services-list">
-              <label for="service-1" class="button-line services-button services-button-1">Доставка</label>
-              <label for="service-2" class="button-line services-button services-button-2">Гарантия</label>
-              <label for="service-3" class="button-line services-button services-button-3">Кредит</label>
+              <label for="service-1" class="button-line services-button services-button-delivery">Доставка</label>
+              <label for="service-2" class="button-line services-button services-button-warranty">Гарантия</label>
+              <label for="service-3" class="button-line services-button services-button-credit">Кредит</label>
             </div>
             <div class="services-description">
-              <div class="services-content services-content-1">
+              <div class="services-content services-content-delivery">
                 <div class="services-text">
                   <h2>Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
               </div>
-              <div class="services-content services-content-2">
+              <div class="services-content services-content-warranty">
                 <div class="services-text">
                   <h2>Гарантия</h2>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                     Товар, не дом, конечно же.</p>
                 </div>
-              </div >
-              <div class="services-content services-content-3">
+              </div>
+              <div class="services-content services-content-credit">
                 <div class="services-text">
                   <h2>Кредит</h2>
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
@@ -296,60 +296,59 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-          <div class="footer-row footer-row-1">
+          <div class="footer-row footer-row-first">
             <img class="logo-device footer-logo-device" src="img/logo-yellow.svg" width="163" height="35" alt="Логотип Device">
             <ul class="footer-user-list user-list">
-              <li class="footer-user-item footer-user-item-1">
-                <a href="enter.html" class="user-link footer-user-link footer-user-link-1">Войти</a>
+              <li class="footer-user-item footer-user-item-user">
+                <a href="enter.html" class="user-link footer-user-link footer-user-link-user">Войти</a>
               </li>
-              <li class="footer-user-item footer-user-item-2">
-                <a href="compare.html" class="user-link footer-user-link footer-user-link-2">Сравнить</a>
+              <li class="footer-user-item footer-user-item-compare">
+                <a href="compare.html" class="user-link footer-user-link footer-user-link-compare">Сравнить</a>
               </li>
-              <li class="footer-user-item footer-user-item-3">
-                <a href="cart.html" class="user-link footer-user-link footer-user-link-3">Корзина</a>
+              <li class="footer-user-item footer-user-item-cart">
+                <a href="cart.html" class="user-link footer-user-link footer-user-link-cart">Корзина</a>
               </li>
             </ul>
           </div>
-          <div class="footer-row footer-row-2">
+          <div class="footer-row footer-row-second">
             <address>г.Москва, ул.Строителей,15</address>
             <nav class="footer-nav">
               <ul class="nav-list footer-nav-list">
-                <li class="nav-item footer-nav-item-1">
+                <li class="nav-item footer-nav-item-delivery">
                   <a href="delivery.html" class="nav-link footer-nav-link ">Доставка</a>
                 </li>
-                <li class="footer-nav-item-2">
+                <li class="footer-nav-item-warranty">
                   <a href="warranty.html" class="nav-link footer-nav-link">Гарантия</a>
                 </li>
-                <li class="footer-nav-item-3">
+                <li class="footer-nav-item-credit">
                   <a href="contacts.html" class="nav-link footer-nav-link">Контакты</a>
                 </li>
               </ul>
             </nav>
             <a class="phone" href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
           </div>
-          <div class="footer-row footer-row-3">
+          <div class="footer-row footer-row-third">
             <ul class="social-network">
-              <li class="social-network-item"><a class="social-network-link social-network-link-1" href="#" aria-label="Faceboook"></a></li>
-              <li class="social-network-item"><a class="social-network-link social-network-link-2" href="#" aria-label="Instagram"></a></li>
-              <li class="social-network-item"><a class="social-network-link social-network-link-3" href="#" aria-label="Twitter"></a></li>
+              <li class="social-network-item"><a class="social-network-link social-network-link-first" href="#" aria-label="Faceboook"></a></li>
+              <li class="social-network-item"><a class="social-network-link social-network-link-second" href="#" aria-label="Instagram"></a></li>
+              <li class="social-network-item"><a class="social-network-link social-network-link-third" href="#" aria-label="Twitter"></a></li>
             </ul>
             <div><a class="page-footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html Academy"></a></div>
           </div>
         </div>
     </footer>
-    <!--popin-->
     <div class="modal-contact">
       <button class="modal-close" type="button">Закрыть</button>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-field modal-field-1">
+        <div class="modal-field">
           <label class="modal-title" for="fullname">Ваше имя:</label>
           <input class="modal-input modal-name" type="text" id="fullname" name="fullname-field" placeholder="Имя Фамилия">
         </div>
-        <div class="modal-field modal-field-2">
+        <div class="modal-field">
           <label class="modal-title" for="email">Ваш e-mail:</label>
           <input class="modal-input modal-email" type="email" id="email" name="email-field" placeholder="email@example.com">
         </div>
-        <div class="modal-field modal-field-3">
+        <div class="modal-field modal-field-text">
           <label class="modal-title" for="message">Текст письма:</label>
           <textarea class="modal-input modal-message" id="message" name="message-field" placeholder="В свободной форме"></textarea>
         </div>
@@ -361,6 +360,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfr!4v1552742332601" width="960" height="599" allowfullscreen></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </div>
-   <script src="js/script.js"></script>
+   <script src="js/script.min.js"></script>
   </body>
 </html>
