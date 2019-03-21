@@ -1282,6 +1282,8 @@ margin-bottom: 16px;
 }
 .user-link-exit {
   opacity: 0.3;
+  color: rgb(0, 0, 0);
+
 }
 .footer-row-second {
   display: flex;
