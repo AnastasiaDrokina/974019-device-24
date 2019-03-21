@@ -1045,6 +1045,7 @@ margin-bottom: 16px;
 }
 .compare {
   opacity: 0.5;
+  color: rgb(0, 0, 0);
 }
 .compare:hover {
   opacity: 1;
