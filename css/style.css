@@ -436,8 +436,8 @@ a {
 }
 .slider-controls::before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
